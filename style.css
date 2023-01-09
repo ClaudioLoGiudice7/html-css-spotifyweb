@@ -83,6 +83,7 @@ main{
     height: 1500px;
     background-color: #141922;
     margin-top: 80px;
+    overflow: auto;
 }
 
 .links-container {
