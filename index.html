@@ -16,27 +16,30 @@
 </head>
 <body>
     <div class="top-content">
+
+        <!-- SIDEBAR -->
+
         <nav class="sidebar">
             <a href="#"><img class="logo" src="./img/logo.svg" alt="logo"></a>
             <ul class="first-sidebar-ul">
                 <li class="sidebar-li">
                     <a href="#">
                         <img class="home" src="./img/home.svg" alt="home">
-                        <span class="first-li">Home</span>
+                        <span class="first-li font-size">Home</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img class="search" src="./img/search.svg" alt="search">
-                        <span class="second-li">Cerca</span>
+                        <img class="search grey-color" src="./img/search.svg" alt="search">
+                        <span class="second-li grey-color font-size">Cerca</span>
                     </a>
                 </li>
 
                 <li id="library-li">
                     <a href="#">
-                        <img class="libreria" src="./img/libreria.svg" alt="libreria">
-                        <span class="third-li">La tua libreria</span>
+                        <img class="libreria grey-color" src="./img/libreria.svg" alt="libreria">
+                        <span class="third-li grey-color font-size">La tua libreria</span>
                     </a>
                 </li>
             </ul>
@@ -44,13 +47,13 @@
             <ul class="second-sidebar-ul">
                 <div id="playlist-block">
                     <li id="first-sidebar-li">
-                        <h4>Playlist</h4>
+                        <h4>PLAYLIST</h4>
                     </li>
                 </div>
 
                 <li>
                     <a href="#">
-                        <div class="d-flex">
+                        <div class="d-flex create-playlist-block">
                             <div class="grey-square">
                                 <i class="fa-solid fa-plus"></i>
                             </div>
@@ -58,33 +61,95 @@
                         </div>
                     </a>
                 </li>
-            
-                <li>
+
+                <div class="playlist-name font-size">
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+
+                    <li class="sidebar-li">
+                        <a class="grey-color" href="#">
+                            Nome Playlist
+                        </a>
+                    </li>
+                </div>
+               
+                <div class="last-sidebar-block">
+                    <div class="d-flex mt">
+                        <div class="download grey-color">
+                            <a href="#"><img src="./img/download.svg" alt="download"></a>
+                        </div>
+                        <a href="#">
+                            <h4 class="grey-color font-size ml">Installa app</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar-line"></div>
+
+                <div class="user d-flex">
+                    <div class="profile">
+                        <a href="#"><img class="profile-img" src="./img/profile.svg" alt="profile"></a>
+                    </div>
                     <a href="#">
-                        <img class="libreria" src="./img/libreria.svg" alt="libreria">
-                        <span class="third-li">La tua libreria</span>
+                        <h4 class="username grey-color font-size ml">John Doe</h4>
                     </a>
-                </li>
+                </div>
             </ul>
         </nav>
 
-        <div class="right-content">
+        <!-- CONTENT -->
+
+        <div class="content">
             <header>
-                <button>
-                    EFFETTUA L'UPGRADE
+                <button id="upgrade-button">
+                    <a id="upgrade-link" href="#">EFFETTUA L'UPGRADE</a>
                 </button>
             </header>
 
             <main>
                 <div class="links-container">
-                    <div class="main-links"><a href="#">IN EVIDENZA</a></div>
-                    <div class="main-links"><a href="#">PODCAST</a></div>
-                    <div class="main-links"><a href="#">CLASSIFICHE</a></div>
-                    <div class="main-links"><a href="#">GENERI E MOOD</a></div>
-                    <div class="main-links"><a href="#">NUOVE USCITE</a></div>
-                    <div class="main-links"><a href="#">SCOPRI</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">IN EVIDENZA</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">PODCAST</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">CLASSIFICHE</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">GENERI E MOOD</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">NUOVE USCITE</a></div>
+                    <div class="main-links font-size"><a class="grey-color" href="#">SCOPRI</a></div>
                 </div>
 
+                <div class="main-greenyellow-line"></div>
                 
                 <!-- 12BOOL -->
                 
@@ -92,55 +157,70 @@
                     <h2 class="first-title">Recently played</h2>
                     <div class="row">
                         <div class="col-2">
-                            <div class="box"><img src="./img/metal_lifting.jpg" alt="metal">
+                            <div class="box"><a href="#"><img src="./img/metal_lifting.jpg" alt="metal"></a>
                                 <div class="description">
-                                    <h4>Heavy Metal</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#"><h4>Heavy Metal</h4>
+                                    <a href="#"><h5 class="subtitle">Subtitle</h5></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-2">
-                            <div class="box"><img src="./img/stranger.jpeg" alt="stranger things">
+                            <div class="box"><a href="#"><img src="./img/stranger.jpeg" alt="stranger"></a>
                                 <div class="description">
-                                    <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#">
+                                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                        <a href="#">
+                                            <h5 class="subtitle">Kyle Dixon & Michael Stein</h5>
+                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-2">
-                            <div class="box"><img src="./img/aquietplace.jpeg" alt="a quiet place">
+                            <div class="box"><a href="#"><img src="./img/aquietplace.jpeg" alt="quiet"></a>
                                 <div class="description">
-                                    <h4>A Quiet Place</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#">
+                                        <h4>A Quiet Place</h4>
+                                        <a href="#">
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-2">
-                            <div class="box"><img src="./img/split.jpeg" alt="split">
+                            <div class="box"><a href="#"><img src="./img/split.jpeg" alt="split"></a>
                                 <div class="description">
-                                    <h4>Split</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#">
+                                        <h4>Split</h4>
+                                        <a href="#">
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-2">
-                            <div class="box"><img src="./img/cure.jpeg" alt="cure">
+                            <div class="box"><a href="#"><img src="./img/cure.jpeg" alt="cure"></a>
                                 <div class="description">
-                                    <h4>A Cure For Wellness</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#">
+                                        <h4>A Cure For Wellness</h4>
+                                        <a href="#">
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-2">
-                            <div class="box"><img src="./img/sinister.jpeg" alt="sinister">
+                            <div class="box"><a href="#"><img src="./img/sinister.jpeg" alt="sinister"></a>
                                 <div class="description">
-                                    <h4>Sinister</h4>
-                                    <h5 class="subtitle">Subtitle</h5>
+                                    <a href="#">
+                                        <h4>Sinister</h4>
+                                        <a href="#">
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </a>
                                 </div>
                             </div>
                         </div>
@@ -150,17 +230,19 @@
                     <h5 class="second-subtitle">Più ascolti, più accurati saranno i suggerimenti.</h5>
                     <div class="row">
                         <div class="col-2">
-                            <div class="box"><img src="./img/radar.jpeg" alt="radar">
+                            <div class="box"><a href="#"><img src="./img/radar.jpeg" alt="radar"></a>
                                 <div class="description">
-                                    <h4>Release Radar</h4>
+                                    <a href="#"><h4>Release Radar</h4></a>
                                 </div>
                             </div>
                         </div>
                     
                         <div class="col-2">
-                            <div class="box"><img src="./img/mixdaily.jpeg" alt="dailymix">
+                            <div class="box"><a href="#"><img src="./img/mixdaily.jpeg" alt="dailymix"></a>
                                 <div class="description">
-                                    <h4>Daily Mix 1</h4>
+                                    <a href="#">
+                                        <h4>Daily Mix 1</h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -170,17 +252,17 @@
                         <h5 class="second-subtitle">Più ascolti, più accurati saranno i suggerimenti.</h5>
                         <div class="row">
                             <div class="col-2">
-                                <div class="box"><img class="circular-image" src="./img/youg.jpeg" alt="lana">
+                                <div class="box"><a href="#"><img class="circular-image" src="./img/youg.jpeg" alt="lana"></a>
                                     <div class="description">
-                                        <h4>Lana Del Rey</h4>
+                                        <a href="#"><h4>Lana Del Rey</h4></a>
                                     </div>
                                 </div>
                             </div>
                         
                             <div class="col-2">
-                                <div class="box"><img class="circular-image" src="./img/einaudi.jpeg" alt="einaudi">
+                                <div class="box"><a href="#"><img class="circular-image" src="./img/einaudi.jpeg" alt="einaudi"></a>
                                     <div class="description">
-                                        <h4>Ludovico Einaudi</h4>
+                                        <a href="#"><h4>Ludovico Einaudi</h4></a>
                                     </div>
                                 </div>
                             </div>
