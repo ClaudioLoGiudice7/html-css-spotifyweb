@@ -38,33 +38,112 @@ video {
     display: table;
 }
 
-.top-content{
-    background-color: goldenrod;
-    height: calc(100vh - 200px);
-    display: flex;
+:root{
+    --footer-height: 100px;
+    --sidebar-width: 230px;
 }
 
-.sidebar{
-    background-color: red;
-    height: 300px;
-    width: 230px;
-    overflow: auto;
+.top-content{
+    height: calc(100vh - var(--footer-height));
+    display: flex;
 }
 
 .right-content {
     position: relative;
     background-color: blue;
     height: 300px;
-    width: calc(100% - 230px);
+    width: calc(100% - var(--sidebar-width));
+}
+
+.sidebar{
+    background-color: #000;
+    height: 700px;
+    width: var(--sidebar-width);
+    overflow: auto;
+    padding-left: 20px;
+}
+
+.logo {
+    width: 130px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.first-sidebar-ul{
+    position: relative;
+}
+
+.sidebar-li{
+    margin-bottom: 7px;
+}
+
+.home{
+    width: 30px;
+    color: #d2d2d2;
+}
+
+.first-li{
+    color: #fcfcfc;
+    position: absolute;
+    top: 7px;
+    left: 35px;
+}
+
+.search{
+    width: 30px;
+}
+
+.second-li {
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+}
+
+#library-li{
+    margin-bottom: 25px;
+}
+
+.libreria {
+    width: 30px;
+}
+
+.third-li {
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+}
+
+#first-sidebar-li{
+    margin-bottom: 15px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.grey-square{
+    width: 40px;
+    height: 40px;
+    background-color: #a3a3a3;
+}
+
+.fa-plus{
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#create-playlist{
+    color: #707378;
 }
 
 header{
     height: 80px;
     width: 100%;
     background-color: #080b12;
+    opacity: .8;
     position: fixed;
     z-index: 1;
-    margin-bottom: 200px;
 }
 
 button {
@@ -75,14 +154,17 @@ button {
     border-radius: 50px;
     padding: 15px;
     font-size: smaller;
-    margin-left: 910px;
+    margin-left: 880px;
     margin-top: 15px;
 }
 
+button:hover{
+    scale: 1.2;
+}
+
 main{
-    height: 1500px;
+    height: 700px;
     background-color: #141922;
-    margin-top: 80px;
     overflow: auto;
 }
 
@@ -163,6 +245,6 @@ img{
 
 footer{
     background-color: grey;
-    height: 200px;
+    height: var(--footer-height);
     margin-top: 1000px;
 }
