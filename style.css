@@ -42,6 +42,10 @@ video {
     color: #707378;
 }
 
+.white{
+    color: #fff;
+}
+
 .mt{
     margin-top: 250px;
 }
@@ -86,6 +90,14 @@ video {
 
 .first-sidebar-ul{
     position: relative;
+    margin-left: -20px;
+    padding-left: 20px;
+}
+
+.first {
+    margin-left: -20px;
+    padding-left: 17px;
+    border-left: 3px solid greenyellow;
 }
 
 .sidebar-li{
@@ -102,6 +114,7 @@ video {
     position: absolute;
     top: 7px;
     left: 35px;
+    padding-left: 20px;
 }
 
 .search{
@@ -112,6 +125,7 @@ video {
     position: absolute;
     bottom: 46px;
     left: 35px;
+    padding-left: 20px;
 }
 
 #library-li{
@@ -126,6 +140,7 @@ video {
     position: absolute;
     bottom: 12px;
     left: 35px;
+    padding-left: 20px;
 }
 
 #first-sidebar-li{
@@ -316,4 +331,133 @@ footer{
     background-color: #282828;
     height: var(--footer-height);
     margin-top: 365px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer{
+    margin-left: 20px;
+    display: flex;
+}
+
+#sinister {
+    width: 50px;
+    height: 50px;
+}
+
+.song-block {
+    margin-left: 10px;
+}
+
+.song-block-span{
+    
+}
+
+.song-name {
+    font-size: smaller;
+}
+
+.left-footer-icons{
+    margin-left: 10px;
+}
+
+.cemtral-footer{
+    display: flex;
+}
+
+.central-footer-icons {
+    margin-left: 155px;
+    position: absolute;
+    top: 20px;
+}
+
+.first-duration {
+    font-size: 11px;
+}
+
+.second-duration {
+    font-size: 11px;
+}
+
+.progress-bar{
+    width: 400px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #555;
+}
+
+.progress-bar:hover .progress{
+    background-color: green;
+}
+
+.progress-bar:hover .progress::after {
+    display: block;
+}
+
+.progress{
+    display: block;
+    width: 28%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress::after{
+    content: "";
+    display: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.right-footer{
+    margin-right: 20px;
+    display: flex;
+}
+
+.right-footer-icons{
+    margin-right: 10px;
+}
+
+.short-progress-bar {
+    width: 100px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #555;
+}
+
+.short-progress-bar:hover .short-progress {
+    background-color: green;
+}
+
+.short-progress-bar:hover .short-progress::after {
+    display: block;
+}
+
+.short-progress {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    cursor: pointer;
+}
+
+.short-progress::after {
+    content: "";
+    display: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    position: absolute;
+    top: -8px;
+    right: -8px;
 }
