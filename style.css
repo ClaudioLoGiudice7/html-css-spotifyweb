@@ -71,13 +71,13 @@ video {
 .content {
     position: relative;
     background-color: blue;
-    height: 300px;
+    height: 100%;
     width: calc(100% - var(--sidebar-width));
 }
 
 .sidebar{
     background-color: #000;
-    height: 900px;
+    height: 100%;
     width: var(--sidebar-width);
     padding-left: 20px;
 }
@@ -86,12 +86,15 @@ video {
     width: 130px;
     margin-top: 20px;
     margin-bottom: 25px;
+    height: 38px;
 }
 
-.first-sidebar-ul{
+.first-sidebar-ul {
     position: relative;
     margin-left: -20px;
     padding-left: 20px;
+    height: 110px;
+    margin-bottom: 30px;
 }
 
 .first {
@@ -151,6 +154,18 @@ video {
     color: #fff;
 }
 
+.second-sidebar-ul{
+    height: calc(100% - 178px);
+}
+
+
+
+
+
+
+
+
+
 #first-sidebar-li{
     margin-bottom: 15px;
 }
@@ -191,6 +206,7 @@ video {
 }
 
 .playlist-name {
+    height: 200px;
     line-height: 30px;
     overflow: auto;
 }
@@ -267,7 +283,7 @@ header{
 }
 
 main{
-    height: 900px;
+    height: 100%;
     background-color: #141922;
     overflow: auto;
 }
@@ -316,9 +332,20 @@ h2{
     margin-bottom: 45px;
 }
 
-.play-button{
+.box{
+    margin-right: 15px;
     position: relative;
+}
+
+.box:hover{
+    opacity: .5;
+}
+
+.play-button {
+    position: absolute;
     display: none;
+    top: 1px;
+    left: 55px;
 }
 
 .play-button>a>i {
@@ -326,14 +353,6 @@ h2{
     top: 53px;
     left: 31%;
     font-size: 56px;
-}
-
-.box{
-    margin-right: 15px;
-}
-
-.box:hover{
-    opacity: .5;
 }
 
 .box:hover .play-button{
@@ -374,7 +393,6 @@ img{
 footer{
     background-color: #282828;
     height: var(--footer-height);
-    margin-top: 365px;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -530,7 +548,7 @@ footer{
     font-size: 13px;
 }
 
-.fa-display:hover{
+.footer-circle-play:hover{
     scale: 1.2;
 }
 
