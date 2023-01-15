@@ -583,3 +583,25 @@ footer{
     top: -8px;
     right: -8px;
 }
+
+@media screen and (max-width: 845px) {
+    .col-2{
+        min-width: calc((100% / 12) * 3);
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .col-2 {
+        min-width: calc((100% / 12) * 6);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-li, .second-li, .third-li, .playlist-and-create-playlist-block, .playlist-name, .d-flex > a > h4, .sidebar-line{
+        display: none;
+    }
+
+    .first-sidebar-ul{
+        height: 350px;
+    }
+}
